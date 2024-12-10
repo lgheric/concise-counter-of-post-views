@@ -2,7 +2,7 @@
 /**
 * Plugin Name: Concise Post Views Counter
 * Description: Show post views at the bottom of the post and in the post list of the admin panel.
-* Version: 1.0.0
+* Version: 1.0
 * Author: Robert South
 * License: GPLv3 or later
 * License URI: https://www.gnu.org/licenses/gpl-3.0.html
