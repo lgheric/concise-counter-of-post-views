@@ -2,8 +2,7 @@
 namespace ConciseCounterOfPostViews;
 /**
  * Plugin Name: Concise Counter of Post Views
- * Description: This plug-in counts the number of times the post has been visited and displays it at the bottom of the post.
- * At the same time, you can also see this value in the post list in the admin panel.
+ * Description: This plug-in counts the number of times the post has been visited and displays it at the bottom of the post. At the same time, you can also see this value in the post list in the admin panel.
  * Version: 2.0
  * Author: Robert South
  * License: GPLv3 or later
