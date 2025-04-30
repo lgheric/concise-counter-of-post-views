@@ -1,7 +1,14 @@
 <?php
 /**
  * Plugin Name: Concise Counter of Post Views
- * Description: This plug-in counts the number of times the post has been visited and displays it at the bottom of the post. At the same time, you can also see this value in the post list in the admin panel.
+ * Description: Concise Counter of Post Views is a lightweight and efficient plugin that tracks and displays post view counts.
+ * It now includes the following features:
+ * ✅ Total post views tracking
+ * ✅ Today's post views tracking
+ * ✅ Ajax-based view count increment (compatible with caching plugins)
+ * ✅ Initial framework of the settings page in the admin panel
+ * ✅ Shortcode [concise_views] to display the view count anywhere
+ * Ideal for bloggers and content creators who want simple and accurate view tracking without bloat.
  * Version: 3.0
  * Author: Robert South
  * License: GPLv3 or later

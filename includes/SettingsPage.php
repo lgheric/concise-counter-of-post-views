@@ -6,25 +6,25 @@ defined('ABSPATH') || exit;
 class SettingsPage {
 
     public function __construct() {
-        // 添加设置页面
+        // Add Settings Page
         add_action('admin_menu', [$this, 'add_settings_menu']);
         add_action('admin_init', [$this, 'register_settings']);
     }
 
     public function add_settings_menu() {
         add_options_page(
-            '浏览量统计设置',          // 页面标题
-            '浏览量统计',              // 菜单标题
-            'manage_options',          // 权限要求
-            'concise_counter_settings', // 菜单slug
-            [$this, 'render_settings_page'] // 回调方法
+            __('Page view statistics settings', 'concise-counter-of-post-views'),          // page title
+            __('Page view statistics', 'concise-counter-of-post-views'),              // menu title
+            'manage_options',          // Permission requirement
+            'concise_counter_settings', // menu slug
+            [$this, 'render_settings_page'] // Callback function
         );
     }
 
     public function render_settings_page() {
         ?>
         <div class="wrap">
-            <h1>浏览量统计设置</h1>
+            <h1><?php _e('Page view statistics settings', 'concise-counter-of-post-views');?></h1>
             <form method="post" action="options.php">
                 <?php
                 settings_fields('concise_counter_settings_group');
@@ -45,14 +45,14 @@ class SettingsPage {
 
         add_settings_section(
             'concise_counter_settings_section',
-            '功能设置',
+            __('Function settings', 'concise-counter-of-post-views'),
             null,
             'concise_counter_settings'
         );
 
         add_settings_field(
             'concise_counter_of_post_views_enabled',
-            '启用浏览量统计',
+            __('Enable page view statistics', 'concise-counter-of-post-views'),
             [$this, 'render_checkbox_field'],
             'concise_counter_settings',
             'concise_counter_settings_section'

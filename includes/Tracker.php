@@ -23,17 +23,17 @@ class Tracker {
 
         //error_log('Track views triggered for post ID: ' . $post_id);
 
-        // 检查是否开启浏览量统计
+        // Check whether to turn on page view statistics.
         if ( get_option('concise_counter_of_post_views_enabled', '1') !== '1' ) {
             return;
         }
 
-        // 总浏览数
+        // Total views
         $total = (int) get_post_meta($post_id, self::$meta_key_total, true);
         update_post_meta($post_id, self::$meta_key_total, $total + 1);
         //error_log('Total views: ' . $total);
 
-        // 今日浏览数
+        // Today's views
         $today_key = self::$meta_key_today_prefix . gmdate('Ymd');
         $today = (int) get_post_meta($post_id, $today_key, true);
         update_post_meta($post_id, $today_key, $today + 1);
@@ -41,12 +41,12 @@ class Tracker {
     }
 
     public function track_views_ajax() {
-        check_ajax_referer('track_views_nonce', 'nonce'); // 验证 nonce，'nonce' 是前端提交的字段名
+        check_ajax_referer('track_views_nonce', 'nonce'); // Verify nonce, 'nonce' is the field name submitted by the frontend
 
         $post_id = absint($_POST['post_id'] ?? 0);
         if (!$post_id) wp_send_json_error();
 
-        $this->track_views(); // 同样处理逻辑
+        $this->track_views(); // Same processing logic
         wp_send_json_success(['ok' => true]);
     }
 

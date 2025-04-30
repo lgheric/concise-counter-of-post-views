@@ -1,0 +1,51 @@
+# Copyright (C) 2025 Robert South
+# This file is distributed under the GPLv3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Concise Counter of Post Views 3.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/concise-counter-of-post-views\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-04-30T09:57:13+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: concise-counter-of-post-views\n"
+
+#. Plugin Name of the plugin
+#: concise-counter-of-post-views.php
+msgid "Concise Counter of Post Views"
+msgstr ""
+
+#. Description of the plugin
+#: concise-counter-of-post-views.php
+msgid "Concise Counter of Post Views is a lightweight and efficient plugin that tracks and displays post view counts."
+msgstr ""
+
+#. Author of the plugin
+#: concise-counter-of-post-views.php
+msgid "Robert South"
+msgstr ""
+
+#: includes/AdminColumns.php:18
+msgid "ccopv_views"
+msgstr ""
+
+#: includes/SettingsPage.php:16
+#: includes/SettingsPage.php:27
+msgid "Page view statistics settings"
+msgstr ""
+
+#: includes/SettingsPage.php:17
+msgid "Page view statistics"
+msgstr ""
+
+#: includes/SettingsPage.php:48
+msgid "Function settings"
+msgstr ""
+
+#: includes/SettingsPage.php:55
+msgid "Enable page view statistics"
+msgstr ""
