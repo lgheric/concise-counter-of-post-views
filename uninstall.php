@@ -38,5 +38,14 @@ if (class_exists('\ConciseCounterOfPostViewsPlugin\Tracker')) {
         $meta_key_total
     );
     $wpdb->query($query);
+
+    //
+    $meta_key_today_prefix = \ConciseCounterOfPostViewsPlugin\Tracker::$meta_key_today_prefix;
+    $query_today = $wpdb->prepare(
+        "DELETE FROM $wpdb->postmeta WHERE meta_key LIKE %s",
+        $meta_key_today_prefix . '%'
+    );
+    $wpdb->query($query_today);
+
 }
 
