@@ -24,7 +24,7 @@ class SettingsPage {
     public function render_settings_page() {
         ?>
         <div class="wrap">
-            <h1><?php _e('Page view statistics settings', 'concise-counter-of-post-views');?></h1>
+            <h1><?php esc_html_e('Page view statistics settings', 'concise-counter-of-post-views');?></h1>
             <form method="post" action="options.php">
                 <?php
                 settings_fields('concise_counter_settings_group');
@@ -63,6 +63,14 @@ class SettingsPage {
         $value = get_option('concise_counter_of_post_views_enabled', '1');
         ?>
         <input type="checkbox" name="concise_counter_of_post_views_enabled" value="1" <?php checked($value, '1'); ?> />
+        <p class="description">
+            <?php esc_html_e('When enabled, the page views of each article will be automatically counted.', 'concise-counter-of-post-views'); ?>
+        </p>
+        <p>
+            <strong><?php esc_html_e('short code：', 'concise-counter-of-post-views'); ?></strong>
+            <code>[concise_post_views]</code>
+            <?php esc_html_e('Can be used to display page views in articles or pages.', 'concise-counter-of-post-views'); ?>
+        </p>
         <?php
     }
 

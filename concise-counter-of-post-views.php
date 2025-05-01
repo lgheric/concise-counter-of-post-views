@@ -32,6 +32,9 @@ class ConciseCounterOfPostViews {
 
     public function __construct() {
         add_action( 'plugins_loaded', [$this, 'load_textdomain']);
+        // Filters
+        add_filter('plugin_action_links_' . plugin_basename(__FILE__), [$this, 'add_action_links']);
+        add_filter('plugin_row_meta', [$this, 'add_meta_links'], 10, 2);
 
         new Tracker();
         new Display();
@@ -42,6 +45,20 @@ class ConciseCounterOfPostViews {
     function load_textdomain() {
         load_plugin_textdomain( 'concise-counter-of-post-views', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
     }
+
+    public function add_action_links($links) {
+        $settings_link = '<a href="' . admin_url('options-general.php?page=concise_counter_settings') . '">' . __('Settings', 'concise-counter-of-post-views') . '</a>';
+        array_unshift($links, $settings_link);
+        return $links;
+    }
+
+    function add_meta_links($links, $file) {
+        if ($file === plugin_basename(__FILE__)) {
+            $links[] = '<a href="http://ko-fi.com/robertsouth" target="_blank">❤</a>';
+        }
+        return $links;
+    }
+
 }
 
 new ConciseCounterOfPostViews();

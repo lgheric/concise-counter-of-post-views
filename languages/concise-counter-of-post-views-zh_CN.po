@@ -3,9 +3,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Concise Counter of Post Views 3.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/concise-counter-of-post-views\n"
-"POT-Creation-Date: 2025-04-30T08:43:52+00:00\n"
-"PO-Revision-Date: 2025-04-30 18:02+0800\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/concise-counter-"
+"of-post-views\n"
+"POT-Creation-Date: 2025-05-01T07:54:55+00:00\n"
+"PO-Revision-Date: 2025-05-01 15:56+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -23,13 +24,19 @@ msgstr ""
 #. Description of the plugin
 #: concise-counter-of-post-views.php
 msgid ""
-"Concise Counter of Post Views is a lightweight and efficient plugin that tracks and displays post view counts."
-msgstr "简洁的帖子浏览量计数器是一款轻量级且高效的插件，用于跟踪和显示帖子浏览量。"
+"Concise Counter of Post Views is a lightweight and efficient plugin that "
+"tracks and displays post view counts."
+msgstr ""
+"简洁的帖子浏览量计数器是一款轻量级且高效的插件，用于跟踪和显示帖子浏览量。"
 
 #. Author of the plugin
 #: concise-counter-of-post-views.php
 msgid "Robert South"
 msgstr ""
+
+#: concise-counter-of-post-views.php:49
+msgid "Settings"
+msgstr "设置"
 
 #: includes/AdminColumns.php:18
 msgid "ccopv_views"
@@ -50,3 +57,16 @@ msgstr "功能设置"
 #: includes/SettingsPage.php:55
 msgid "Enable page view statistics"
 msgstr "启用浏览量统计"
+
+#: includes/SettingsPage.php:67
+msgid ""
+"When enabled, the page views of each article will be automatically counted."
+msgstr "启用后将自动统计每篇文章的浏览量。"
+
+#: includes/SettingsPage.php:70
+msgid "short code："
+msgstr "短代码："
+
+#: includes/SettingsPage.php:72
+msgid "Can be used to display page views in articles or pages."
+msgstr "可用于在文章或页面中显示浏览量。"
