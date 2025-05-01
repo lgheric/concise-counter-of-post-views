@@ -22,7 +22,7 @@ It’s designed to be simple, fast, and compatible with most themes and caching 
 ✅ Track today's post views
 ✅ Increment views using Ajax (compatible with most caching plugins)
 ✅ Admin panel with initial settings framework
-✅ Use shortcode `[concise_views]` to display views in posts, pages, or widgets
+✅ Use shortcode `[concise_post_views]` to display views in posts, pages, or widgets
 
 Perfect for bloggers, content creators, and developers who want minimal and effective view tracking.
 
@@ -44,7 +44,7 @@ Activate the Concise Counter of Post Views plugin.
 Yes! The plugin uses Ajax to update views, so it works well with most caching plugins.
 
 = Can I display view counts manually? =
-Yes, use the `[concise_views]` shortcode in posts, pages, or widget areas.
+Yes, use the `[concise_post_views]` shortcode in posts, pages, or widget areas.
 
 = Does it count views for custom post types? =
 Currently, the plugin is designed for standard posts. Support for custom post types may be added in future versions.
@@ -61,7 +61,7 @@ Currently, the plugin is designed for standard posts. Support for custom post ty
 * Added today's post views tracking
 * Ajax-based view count increment (cache-friendly)
 * Added initial admin settings page
-* Added shortcode `[concise_views]` to display view count
+* Added shortcode `[concise_post_views]` to display view count
 
 = 2.0 =
 * Rename the plugin
