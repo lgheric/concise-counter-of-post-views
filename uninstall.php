@@ -27,11 +27,16 @@ function ccopv_delete_all_options() {
     }
 }
 
-$meta_key_total = \ConciseCounterOfPostViewsPlugin\Tracker::$meta_key_total;
-$query = $wpdb->prepare(
-    "DELETE FROM $wpdb->postmeta WHERE meta_key = %s",
-    $meta_key_total
-);
-$wpdb->query($query);
+require_once plugin_dir_path(__FILE__) . 'includes/Tracker.php';
 
+global $wpdb;
+
+if (class_exists('\ConciseCounterOfPostViewsPlugin\Tracker')) {
+    $meta_key_total = \ConciseCounterOfPostViewsPlugin\Tracker::$meta_key_total;
+    $query = $wpdb->prepare(
+        "DELETE FROM $wpdb->postmeta WHERE meta_key = %s",
+        $meta_key_total
+    );
+    $wpdb->query($query);
+}
 
