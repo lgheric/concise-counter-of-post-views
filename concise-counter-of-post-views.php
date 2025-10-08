@@ -9,7 +9,7 @@
  * ✅ Initial framework of the settings page in the admin panel
  * ✅ Shortcode [concise_views] to display the view count anywhere
  * Ideal for bloggers and content creators who want simple and accurate view tracking without bloat.
- * Version: 3.0
+ * Version: 3.1
  * Author: Robert South
  * Author URI: https://robertwp.com
  * License: GPLv3 or later
