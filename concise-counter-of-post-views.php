@@ -11,6 +11,7 @@
  * Ideal for bloggers and content creators who want simple and accurate view tracking without bloat.
  * Version: 3.0
  * Author: Robert South
+ * Author URI: https://robertwp.com
  * License: GPLv3 or later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: concise-counter-of-post-views
@@ -31,10 +32,10 @@ define('CONCISE_COUNTER_VERSION', '3.0.0');
 class ConciseCounterOfPostViews {
 
     public function __construct() {
-        add_action( 'plugins_loaded', [$this, 'load_textdomain']);
         // Filters
         add_filter('plugin_action_links_' . plugin_basename(__FILE__), [$this, 'add_action_links']);
         add_filter('plugin_row_meta', [$this, 'add_meta_links'], 10, 2);
+        add_action('admin_notices', [$this, 'concise_counter_admin_notice']);
 
         new Tracker();
         new Display();
@@ -42,8 +43,8 @@ class ConciseCounterOfPostViews {
         new SettingsPage();
     }
 
-    function load_textdomain() {
-        load_plugin_textdomain( 'concise-counter-of-post-views', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+    public function concise_counter_admin_notice() {
+        echo '<div class="notice notice-warning"><p><strong>Concise Counter of Post Views</strong> has been replaced by <a href="https://wordpress.org/plugins/rw-postviewstats-lite/" target="_blank">RW PostViewStats Lite</a>. Please install the new version for continued support.</p></div>';
     }
 
     public function add_action_links($links) {

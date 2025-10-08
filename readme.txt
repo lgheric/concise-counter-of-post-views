@@ -10,9 +10,11 @@ License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 
-A lightweight plugin to count and display post views — supports today’s views, Ajax updates, shortcode, and admin settings.
+⚠️ This plugin has been replaced by RW PostViewStats Lite.
 
 == Description ==
+⚠️ This plugin has been replaced by RW PostViewStats Lite.
+Please install the new plugin here: https://wordpress.org/plugins/rw-postviewstats-lite/
 
 Concise Counter of Post Views is a lightweight and efficient plugin that tracks and displays post view counts.
 It’s designed to be simple, fast, and compatible with most themes and caching systems.
@@ -56,6 +58,13 @@ Currently, the plugin is designed for standard posts. Support for custom post ty
 
 == Changelog ==
 
+= 3.1 =
+* Added a clear notice in the Description section to inform users that this plugin has been replaced by [RW PostViewStats Lite](https://wordpress.org/plugins/rw-postviewstats-lite/).
+* Added an admin notice in the WordPress dashboard recommending users to switch to the new plugin.
+* Removed `load_plugin_textdomain()` call since it's no longer needed for WordPress 4.6 and above.
+* Added Author URI to the plugin header: https://robertwp.com
+* Minor code and readme improvements for clarity and compatibility.
+
 = 3.0 =
 * Added total post views tracking
 * Added today's post views tracking
@@ -71,6 +80,9 @@ Currently, the plugin is designed for standard posts. Support for custom post ty
 * Initial release with basic post view tracking
 
 == Upgrade Notice ==
+
+= 3.1 =
+This plugin has been replaced by RW PostViewStats Lite. Please switch to the new plugin for continued updates and support.
 
 = 3.0 =
 Major feature update: adds support for today’s views, Ajax view counting, and shortcode display.
