@@ -84,7 +84,4 @@ Currently, the plugin is designed for standard posts. Support for custom post ty
 = 3.1 =
 This plugin has been replaced by RW PostViewStats Lite. Please switch to the new plugin for continued updates and support.
 
-= 3.0 =
-Major feature update: adds support for today’s views, Ajax view counting, and shortcode display.
-
 
